@@ -1,0 +1,7 @@
+[org.gnome.desktop.background]
+picture-options='stretched'
+picture-uri='file:///usr/share/gnome-background-properties/blankon-wallpapers.xml'
+
+[org.gnome.desktop.screensaver]
+picture-options='zoom'
+picture-uri='file:///usr/share/images/desktop-base/lines-lockscreen.xml'
