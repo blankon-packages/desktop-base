@@ -1,6 +1,6 @@
 [org.gnome.desktop.background]
 picture-options='stretched'
-picture-uri='file:///usr/share/gnome-background-properties/blankon-wallpapers.xml'
+picture-uri='file:///usr/share/backgrounds/contex/tambora.xml'
 
 [org.gnome.desktop.screensaver]
 picture-options='zoom'
