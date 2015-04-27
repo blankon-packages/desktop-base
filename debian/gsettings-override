@@ -5,3 +5,6 @@ picture-uri='file:///usr/share/backgrounds/contex/tambora.xml'
 [org.gnome.desktop.screensaver]
 picture-options='zoom'
 picture-uri='file:///usr/share/images/desktop-base/lines-lockscreen.xml'
+
+[org.gnome.desktop.interface]
+icon-theme='Tebu'
