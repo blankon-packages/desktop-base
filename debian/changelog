@@ -1,4 +1,4 @@
-desktop-base (8.0.2blankon3) theme; urgency=medium
+desktop-base (8.0.2blankon3) tambora; urgency=medium
 
   * gsettings-override: add icon-theme 
 
