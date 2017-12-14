@@ -1,20 +1,131 @@
-desktop-base (8.0.2blankon3) tambora; urgency=medium
+desktop-base (9.0.5blankon1) uluwatu; urgency=medium
 
-  * gsettings-override: add icon-theme 
+  * Change default background to BlankOn
 
- -- Mahyuddin <yudi.al@gmail.com>  Mon, 27 Apr 2015 22:49:14 +0700
+ -- antosamalona <ansamsoftdev@gmail.com>  Thu, 14 Dec 2017 08:43:06 +0800
 
-desktop-base (8.0.2blankon2) tambora; urgency=medium
+desktop-base (9.0.5) unstable; urgency=medium
 
-  * Fix Backgrounds Location 
+  * Ensure postinst doesn’t fails on upgrade even when an incomplete theme pack
+    is active. (Closes: #858643)
+  * Various check-all-the-things fixes.
 
- -- Mahyuddin <yudi.al@gmail.com>  Tue, 07 Apr 2015 17:26:13 +0700
+ -- Aurélien COUDERC <zecoucou@free.fr>  Sun, 02 Jul 2017 10:24:37 +0200
 
-desktop-base (8.0.2blankon1) tambora; urgency=medium
+desktop-base (9.0.4) unstable; urgency=medium
 
-  * Make BlankOn Wallpapers a default background. 
+  * Fix XML errors in some GNOME wallpaper description files.
+    (Closes: #862228)
+  * Build with debhelper, bump compatibility level to 10, drop CDBS build
+    dependency.
+  * Add autopkgtests to validate XMLs structure and avoid bugs like #862228.
 
- -- Mahyuddin <yudi.al@gmail.com>  Sun, 05 Apr 2015 17:35:00 +0700
+ -- Aurélien COUDERC <zecoucou@free.fr>  Tue, 27 Jun 2017 07:47:59 +0200
+
+desktop-base (9.0.3) unstable; urgency=medium
+
+  * Fix a few problems in maintainer scripts, thanks Raphaël Hertzog for the
+    detailed review.
+    No change in behaviour but it will make the scripts more readable and
+    maintainable.
+    - preinst: reorganize if conditions for package version detection in a
+               readable order.
+    - prerm: remove references to non existing $priority variable in loops.
+    - prerm: no need to remove secondary alternatives just before removing
+             a main alternative. Secondary are removed in the process anyway.
+    (Closes: #853224)
+
+ -- Aurélien COUDERC <zecoucou@free.fr>  Mon, 30 Jan 2017 22:21:40 +0100
+
+desktop-base (9.0.2) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * Include size 3840x2160 (4k) wallpaper and lockscreen. (Closes: #851930)
+  * Include more sizes of emblem-debian, add emblem-debian-white.
+    (Closes: #833529)
+  * Lockscreen/Joy: fix wallpaper image being used instead of lockscreen.
+
+ -- Aurélien COUDERC <zecoucou@free.fr>  Tue, 24 Jan 2017 23:32:47 +0100
+
+desktop-base (9.0.1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * postinst: Report success even when update-grub fails, this is needed
+    for installation to work inside live systems. (Closes: #850601)
+  * Plymouth/{softWaves,Lines,Joy}: provide fsckd progress support. Thanks to
+    Ubuntu and Didier Roche for doing the work and providing timely info.
+    (Closes: #850181)
+  * Plymouth/softWaves: various visual tweaks, boost logo glow, improvements
+    in password input rendering. Thanks Juliette!
+  * Plymouth/Lines: ensure password field doesn’t bump into the Debian image
+    even for smaller height screens. (Closes: #774226)
+  * Plymouth/Lines: Remove 8 from Debian8 assets.
+
+ -- Aurélien COUDERC <zecoucou@free.fr>  Sun, 15 Jan 2017 11:25:27 +0100
+
+desktop-base (9.0.0) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * Implement Plymouth splash for Stretch’s soft Waves theme.
+    (Closes: #843998, #842078)
+  * Prepare for plymouth splash integration into theme packs that will allow
+    splash selection via alternatives in the future.
+  * Fix postinst broken in 9.0.0~exp2 on install (and not upgrade) of the
+    package.
+  * Added myself to the uploaders.
+
+ -- Aurélien COUDERC <zecoucou@free.fr>  Mon, 02 Jan 2017 15:56:32 +0100
+
+desktop-base (9.0.0~exp2) experimental; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * Fix detection of update-initramfs. (Closes: #843727)
+  * Include GRUB text/background colors in the theme pack / alternatives
+    system. (Closes: #606383)
+
+  * Additional wallpaper and lockscreen ratios for Soft Waves theme.
+  * Remove Moreblue theme from Lenny.
+  * Add theme pack support Joy/Spacefun themes.
+
+  * Use dash instead of bash for postinst
+  * Generate all GRUB bitmaps from SVG at build time instead of versioning
+    them.
+  * Stop shipping SDDM breeze-based theme, now in plasma-workspace.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 19 Dec 2016 14:51:42 +0100
+
+desktop-base (9.0.0~exp1) experimental; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * Initial support for Soft Waves theme by Juliette Belin.
+    - Default theme for GRUB (Closes: #598776, #773369)
+    - Default theme for GNOME wallpaper and lock screen
+    - Default theme for Plasma 5 wallpaper (Closes: #831730)
+    - Theme available for SDDM login and lock screen
+    - debian/copyright updated
+  * Initial support for global theme switching via alternatives
+
+  * Remove references to long gone KDE3 globals in maintainer scripts.
+    (Closes: #659549)
+  * README.Debian: inform about updating initrds too. (Closes: #612163)
+  * Document use of sync use before grub update in postinst. (Closes: #611364)
+  * Add SDDM theming for KDE/Plasma 5:
+    - Based on default SDDM theme breeze + Debian theme background.
+    - Can be configured with alternatives (also works in lightdm).
+   (Closes: #415064, #608523, #611170, #670866, #762276)
+  * Remove deprecated ksplash and kdm from KDE4. (Closes: #607842)
+  * Remove deprecated splash options from GNOME 2.
+  * Some cleanup in maintainer scripts to correctly handle alternatives.
+    (Closes: #773404)
+
+  * Fix lintian warning command-with-path-in-maintainer-script in
+    postinst script.
+  * Bump Standards-Version to 3.9.8 (no changes needed).
+
+  [ Yves-Alexis Perez ]
+  * Also use Debian wallpaper for second monitor on Xfce.       closes: #785371
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 07 Nov 2016 21:32:30 +0100
 
 desktop-base (8.0.2) unstable; urgency=medium
 
@@ -69,7 +180,7 @@ desktop-base (8.0.0~exp1) experimental; urgency=low
 
   [ Yves-Alexis Perez ]
   * Initial support for Lines theme by Juliette Belin.
-    - add the various ratio SVG wallpapers to backgrounds/ 
+    - add the various ratio SVG wallpapers to backgrounds/
     - debian/{postinst,prerm}: update alternatives priority to make Lines the
       automatic/default one
     - gdm3/background.svg updated to use Lines login screen
@@ -89,7 +200,7 @@ desktop-base (7.0.3) unstable; urgency=low
     - Don't cut off the last hostname letter.
     - Adjust font sizes and colors.
   * Ksplash: don't cut off blurred icons.
-  * Reduce opacity of debian swirl in gdm/kdm background to be
+  * Reduce opacity of Debian swirl in gdm/kdm background to be
     less distracting.
 
   [ Paul Tagliamonte ]
@@ -103,7 +214,7 @@ desktop-base (7.0.3) unstable; urgency=low
 
 desktop-base (7.0.2) unstable; urgency=low
 
-  * Droped the ${misc:Depends}, as Yves-Alexis pointed out, it drags in dconf
+  * Dropped the ${misc:Depends}, as Yves-Alexis pointed out, it drags in dconf
     without a reason.
 
  -- Paul Tagliamonte <paultag@debian.org>  Mon, 30 Jul 2012 19:43:20 -0400
@@ -113,7 +224,7 @@ desktop-base (7.0.1) unstable; urgency=low
   [ Eshat Cakar ]
   * Make 1366x768 ksplash background really that resolution. (Closes: #679306)
   * Fix typo in plymouth theme. (Closes: #679357)
-  * Updated ink-splated kde wallpaper, to fix alignment issues.
+  * Updated ink-splated KDE wallpaper, to fix alignment issues.
 
   [ Paul Tagliamonte ]
   * Add ${misc:Depends} to the Depends for the binary package. We're using
@@ -130,7 +241,7 @@ desktop-base (7.0.0) unstable; urgency=low
   * Updated the KDM theme.
   * Updated the ksplash theme.
   * Install Joy wallpapers into /usr/share/wallpapers/
-    This makes them visibile in KDE's wallpaper chooser
+    This makes them visible in KDE's wallpaper chooser
   * Set default wallpaper for new users via plasma scripting
 
   [ Paul Tagliamonte ]
@@ -188,9 +299,9 @@ desktop-base (6.0.7) unstable; urgency=low
 
   [ Josselin Mouette ]
   * Build-depend on recent cdbs+debhelper to have dh_installgsettings.
-  * debian/gsettings-override: set the default background using 
+  * debian/gsettings-override: set the default background using
     GSettings.
-  * xy_desktop-base.gschema.override: configure the default background 
+  * xy_desktop-base.gschema.override: configure the default background
     for gdm3 using GSettings as well.
   * All of this closes: #623094.
   * Add myself to uploaders.
@@ -245,7 +356,7 @@ desktop-base (6.0.3) unstable; urgency=low
     - don't set image-style property, default to auto.          closes: #523150
   * cleanup debian/copyright for removed stuff.                 closes: #594533
   * debian/pixmaps:
-    - debian-security updated, thanks to Ulrich Hansen.         closes: #389155 
+    - debian-security updated, thanks to Ulrich Hansen.         closes: #389155
   * DFSG-ify artwork:                                           closes: #587668
     - various themes, thanks to Ulrich Hansen.
     - SpaceFun theme, thanks to Valessio Brito.
@@ -317,10 +428,10 @@ desktop-base (6.0.0) unstable; urgency=low
       written to disk.
   * debian/prerm:
     - rename grub alternative to add png extension.
-  * Makefile: 
+  * Makefile:
     - drop unused rules for KDE3 and Xfce 4.4.
     - add SpaceFun gdm3 theme.
-    - add SpaceFun kdm theme. 
+    - add SpaceFun kdm theme.
     - install grub theme and script.
   * {ksplash,kdm}-theme/moreblue-orbit{-default}:
     - drop “Debian” word from image to only use DFSG-free logo. closes: #587668
@@ -362,7 +473,7 @@ desktop-base (5.0.3) unstable; urgency=medium
   * debian/preinst:
     - handle upgrade in various cases: (/etc/splashy/themes symlink or not,
       and changed or unchanged themes files)
-  * debian/README.Debian: 
+  * debian/README.Debian:
     - announce the change.
     - tell user how to enable MoreBlue orbit theme if splashy is installed
       after desktop-base.
@@ -469,7 +580,7 @@ desktop-base (4.0.4) unstable; urgency=low
 
 desktop-base (4.0.3) unstable; urgency=low
 
-  * Fix kde default wallpaper appearance between kdm to ksplash switch.
+  * Fix KDE default wallpaper appearance between kdm to ksplash switch.
 
  -- Fathi Boudra <fboudra@free.fr>  Thu, 24 May 2007 01:22:06 +0200
 

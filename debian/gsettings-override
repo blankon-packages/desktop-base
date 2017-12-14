@@ -1,10 +1,10 @@
 [org.gnome.desktop.background]
-picture-options='stretched'
-picture-uri='file:///usr/share/backgrounds/contex/tambora.xml'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/contex/uluwatu.xml'
 
 [org.gnome.desktop.screensaver]
 picture-options='zoom'
-picture-uri='file:///usr/share/images/desktop-base/lines-lockscreen.xml'
+picture-uri='file:///usr/share/images/desktop-base/desktop-lockscreen.xml'
 
 [org.gnome.desktop.interface]
 icon-theme='Tebu'
