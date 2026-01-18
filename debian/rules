@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+# Turn off features of Inkscape and its dependencies that would normally
+# try to connect to the D-Bus session bus
+export DBUS_SESSION_BUS_ADDRESS=invalid:
+export GIO_USE_MEMORY_MONITOR=none
+export GIO_USE_NETWORK_MONITOR=netlink
+export GIO_USE_PORTALS=0
+export GIO_USE_POWER_PROFILE_MONITOR=none
+export GIO_USE_VFS=local
+export GIO_USE_VOLUME_MONITOR=unix
+export GSETTINGS_BACKEND=memory
+export GTK_USE_PORTAL=0
+unexport XDG_RUNTIME_DIR
+
+%:
+	dh $@

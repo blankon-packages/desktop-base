@@ -1,0 +1,8 @@
+# During the testing/unstable cycle there is no version number, so if the
+# logo with text and version number is requested, use the one with only text.
+# Comment these out when the theme is updated for a new stable release,
+# and reinstate them after the stable release.
+usr/share/desktop-base/debian-logos/logo-text.svg           usr/share/desktop-base/debian-logos/logo-text-version.svg
+usr/share/desktop-base/debian-logos/logo-text-64.png        usr/share/desktop-base/debian-logos/logo-text-version-64.png
+usr/share/desktop-base/debian-logos/logo-text-128.png       usr/share/desktop-base/debian-logos/logo-text-version-128.png
+usr/share/desktop-base/debian-logos/logo-text-256.png       usr/share/desktop-base/debian-logos/logo-text-version-256.png
