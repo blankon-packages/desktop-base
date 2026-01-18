@@ -1,8 +1,10 @@
 Source: desktop-base
 Section: x11
 Priority: optional
-Maintainer: Debian Desktop Team <debian-desktop@lists.debian.org>
-Uploaders: Yves-Alexis Perez <corsac@debian.org>,
+Maintainer: BlankOn Developers <blankon-dev@googlegroups.com>
+Uploaders: Hanhan <matcherapy@gmail.com>
+XSBC-Original-Maintainer: Debian Desktop Team <debian-desktop@lists.debian.org>
+XSBC-Original-Uploaders: Yves-Alexis Perez <corsac@debian.org>,
            Aurélien COUDERC <coucouf@debian.org>,
            Jonathan Carter <jcc@debian.org>
 Build-Depends: debhelper-compat (= 13),

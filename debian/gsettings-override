@@ -1,7 +1,10 @@
 [org.gnome.desktop.background]
 picture-options='zoom'
-picture-uri='file:///usr/share/images/desktop-base/desktop-background.xml'
+picture-uri='file:///usr/share/backgrounds/contex/verbeek.xml'
 
 [org.gnome.desktop.screensaver]
 picture-options='zoom'
 picture-uri='file:///usr/share/images/desktop-base/desktop-lockscreen.xml'
+
+[org.gnome.desktop.interface]
+icon-theme='Tebu'

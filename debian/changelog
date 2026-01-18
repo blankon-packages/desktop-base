@@ -1,3 +1,10 @@
+desktop-base (14.0.0~pre2Blankon1) verbeek; urgency=medium
+
+  * update upstream release
+  * Change background to BlankOn
+
+ -- Hanhan <matcherapy@gmail.com>  Sun, 18 Jan 2026 15:54:24 +0700
+
 desktop-base (14.0.0~pre2) unstable; urgency=medium
 
   [ Simon McVittie ]
