@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.1
-Name=Debian Security Updates
+Name=BlankOn Security Updates
 Comment=Learn about new fixed packages
-Icon=/usr/share/pixmaps/debian-security.png
+Icon=/usr/share/pixmaps/blankon-security.png
 Type=Link
-URL=https://www.debian.org/security/
+URL=https://www.blankonlinux.id/security/

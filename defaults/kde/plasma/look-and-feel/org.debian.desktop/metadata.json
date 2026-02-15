@@ -3,8 +3,8 @@
     "KPlugin": {
         "Authors": [
             {
-                "Email": "debian-qt-kde@lists.debian.org",
-                "Name": "Debian Qt/KDE Maintainers"
+                "Email": "dev@blankon.id",
+                "Name": "BlankOn Qt/KDE Maintainers"
             },
             {
                 "Email": "plasma-devel@kde.org",
@@ -61,10 +61,10 @@
             }
         ],
         "Category": "",
-        "Description": "Breeze Twilight adapted to Debian",
-        "Id": "org.debian.desktop",
+        "Description": "Breeze Twilight adapted to BlankOn",
+        "Id": "org.blankon.desktop",
         "License": "GPLv2+",
-        "Name": "Debian Breeze",
+        "Name": "BlankOn Breeze",
         "Website": "https://www.kde.org"
     }
 }
