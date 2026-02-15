@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   width="1920"
-   height="1080"
-   viewBox="0 0 1366 768"
-   preserveAspectRatio="xMidYMid slice"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
    id="svg2"
-   version="1.1">
+   version="1.1"
+   inkscape:version="0.91 r"
+   sodipodi:docname="bukit.svg"
+   >
   <defs
      id="defs4">
     <filter
+       inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter4422"
        x="-0.034248652"
@@ -18,17 +28,75 @@
        y="-0.080202515"
        height="1.160405">
       <feGaussianBlur
+         inkscape:collect="always"
          stdDeviation="28.986678"
          id="feGaussianBlur4424" />
     </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4488">
+      <rect
+         style="opacity:1;fill:#ff9955;stroke:none"
+         id="rect4490"
+         width="1366"
+         height="768"
+         x="-1577.1428"
+         y="-4.2092295" />
+    </clipPath>
   </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="178.33639"
+     inkscape:cy="760.42806"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="717"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="-1577.1429,725.7143"
+       orientation="1,0"
+       id="guide4161" />
+    <sodipodi:guide
+       position="-1180,282.85715"
+       orientation="0,1"
+       id="guide4163" />
+    <sodipodi:guide
+       position="-211.42857,482.85715"
+       orientation="1,0"
+       id="guide4165" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
      id="layer1">
-    <!-- Oversized background for non-16:9 viewports -->
-    <rect x="-1000" y="-1000" width="4000" height="4000" style="fill:#ff9955" id="bg-fill"/>
     <g
        id="g4451"
-       transform="translate(1577.1427,4.2091)">
+       clip-path="url(#clipPath4488)"
+       transform="translate(1434.2857,62.857143)">
       <rect
          y="-4.2092481"
          x="-1577.1428"
@@ -108,6 +176,8 @@
          y="-738.36145"
          transform="matrix(0.96077833,0.2773175,0.65996152,-0.7512994,0,0)" />
       <rect
+         inkscape:transform-center-y="6.4308164"
+         inkscape:transform-center-x="23.765688"
          transform="matrix(-0.99954048,-0.03031221,-0.36076221,-0.93265783,0,0)"
          y="-349.17932"
          x="1537.6709"
@@ -143,6 +213,8 @@
            y="-458.24002"
            transform="matrix(-0.96240254,0.27162722,-0.66828421,-0.74390605,0,0)" />
         <rect
+           inkscape:transform-center-y="26.941419"
+           inkscape:transform-center-x="-37.260944"
            transform="matrix(0.94692101,0.32146634,0.70160139,-0.71256964,0,0)"
            y="-636.45441"
            x="135.95781"
@@ -159,6 +231,8 @@
            id="rect4185"
            style="opacity:1;fill:#ff7f2a;stroke:none" />
         <rect
+           inkscape:transform-center-y="-19.064744"
+           inkscape:transform-center-x="9.0493408"
            transform="matrix(0.14702764,-0.98913238,0.96347035,-0.26781501,0,0)"
            y="-271.66098"
            x="-412.11099"
@@ -201,7 +275,9 @@
            height="11.577433"
            x="-447.51755"
            y="-421.61053"
-           transform="matrix(0.93184269,0.36286252,0.7323064,-0.68097529,0,0)" />
+           transform="matrix(0.93184269,0.36286252,0.7323064,-0.68097529,0,0)"
+           inkscape:transform-center-x="-36.038117"
+           inkscape:transform-center-y="28.556474" />
         <rect
            style="opacity:1;fill:#d45500;stroke:none"
            id="rect4284"
