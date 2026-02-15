@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Verbeek theme for Debian 13.0 Trixie
+Description=Verbeek theme by Elise Couper
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/verbeek
+ScriptFile=/usr/share/plymouth/themes/verbeek/verbeek.script

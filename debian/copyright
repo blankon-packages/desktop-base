@@ -22,70 +22,13 @@ Copyright: 1999, Software in the Public Interest, Inc.
            2010, Ulrich Hansen <uhansen@mainz-online.de>
 License: GPL-2+
 
-Files: spacefun-theme/*
-Copyright: 2010, Valessio Brito <valessio@debianart.org>
-License: GPL-2
-
-Files: spacefun-theme/plymouth/spacefun.script
-Copyright: 2010, Aurélien COUDERC <coucouf@debian.org>
-License: GPL-2+
-
-Files: joy-theme/*
-Copyright: 2012, Adrien Aubourg <adrien.aubourg@gmail.com>
-License: GPL-2+
-
-Files: lines-theme/*
-       softwaves-theme/*
-       moonlight-theme/*
-       homeworld-theme/*
-       emerald-theme/*
-Copyright: 2014-2022, Juliette Taka Belin <juliette.belin@logilab.fr>
-License: GPL-2+
-
-Files: futureprototype-theme/*
-Copyright: 2018, Alex Makas <radicalmonday@gmail.com>
-License: GPL-2+
-
-Files: joy-theme/plymouth/joy.script
-Copyright: 2009, Canonical Ltd.
-           2010, Aurélien Couderc <coucouf@debian.org>
-           2012, Jonathan Carter <jcc@debian.org>
-License: GPL-2+
-
-Files: lines-theme/plymouth/lines.script
-       softwaves-theme/plymouth/softwaves.script
-       futureprototype-theme/plymouth/futureprototype.script
-       moonlight-theme/plymouth/moonlight.script
-Copyright: 2009 Canonical Ltd.
-           2010-2016 Aurélien Couderc <coucouf@debian.org>
-           2014-2018 Juliette Taka <juliette.belin@logilab.fr>
-License: GPL-2+
-
-Files: spacefun-theme/plymouth/logo.png
-       joy-theme/plymouth/debian_logo*
-       lines-theme/plymouth/debian.png
-       softwaves-theme/plymouth/debian.png
-       softwaves-theme/plymouth/logo*.png
-       softwaves-theme/sources/plymouth/debian9.svg
-       softwaves-theme/sources/plymouth/logo*.svg
-       emblems-debian/emblem-debian*
+Files: emblems-debian/emblem-debian*
        source/salsa-debian-icon.svg
-       futureprototype-theme/plymouth/debian.png
-       futureprototype-theme/plymouth/logo*.png
-       futureprototype-theme/sources/plymouth/debian.svg
-       futureprototype-theme/sources/plymouth/logo.svg
-       moonlight-theme/plymouth/debian.png
        debian-logos/*
 Copyright: 1999, Software in the Public Interest, Inc.
 License: GPL-3+ or CC-BY-SA-3.0
 
-Files: moonlight-theme/plymouth/logo_in_circle.png
-       moonlight-theme/sources/plymouth/logo.svg
-Copyright: 1999, Software in the Public Interest, Inc.
-           2018 Juliette Taka <juliette.belin@logilab.fr>
-License: GPL-3+ or CC-BY-SA-3.0
-
-Files: ceratopsian-theme/*
+Files: verbeek-theme/*
 Copyright: 2024 Elise Couper <couperpc@gmail.com>
 License: GPL-2+
 
@@ -411,25 +354,6 @@ License: CC-BY-SA-3.0
  includes additional rights not granted under this License, such
  additional rights are deemed to be included in the License; this
  License is not intended to restrict the license of any rights under
-
-License: GPL-2
- This program is free software; you can redistribute it and/or
- modify it under the terms of the GNU General Public License
- version 2 as published by the Free Software Foundation.
- .
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
- .
- You should have received a copy of the GNU General Public License
- along with this program; if not, write to the Free Software
- Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- 02110-1301, USA.
- .
- On Debian systems, the full text of the GNU General Public
- License version 2 can be found in the file
- `/usr/share/common-licenses/GPL-2’.
 
 License: GPL-2+
  This program is free software: you can redistribute it and/or modify

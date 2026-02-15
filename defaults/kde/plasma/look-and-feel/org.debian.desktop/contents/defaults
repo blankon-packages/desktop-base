@@ -11,7 +11,7 @@ Theme=breeze
 name=breeze-dark
 
 [Wallpaper]
-Image=DebianTheme
+Image=BlankOnTheme
 
 [kcminputrc][Mouse]
 cursorTheme=breeze_cursors

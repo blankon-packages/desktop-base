@@ -1,3 +1,11 @@
+desktop-base (14.0.0~pre2blankon2) verbeek; urgency=medium
+
+  * Remove legacy themes, keep only verbeek (renamed from ceratopsian)
+  * Replace wallpaper, login, and GRUB backgrounds with bukit artwork
+  * Rebrand all theme references from ceratopsian to verbeek
+
+ -- Hanhan <matcherapy@gmail.com>  Sat, 15 Feb 2026 15:54:24 +0700
+
 desktop-base (14.0.0~pre2blankon1) verbeek; urgency=medium
 
   * update upstream release
